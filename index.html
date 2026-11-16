@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>houmo.loc.cc</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: grid; place-items: center;
+    background: radial-gradient(1200px 600px at 50% -10%, #16233f 0%, #0a0f1c 60%);
+    color: #e8eef7;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  .card { width: min(92vw, 560px); padding: 44px 36px; text-align: center; }
+  .mark {
+    width: 56px; height: 56px; margin: 0 auto 22px; border-radius: 16px;
+    background: linear-gradient(135deg, #35d39a, #2b8cff);
+    display: grid; place-items: center; font-size: 26px; font-weight: 700; color: #071018;
+  }
+  h1 { margin: 0 0 10px; font-size: 26px; letter-spacing: .2px; }
+  p { margin: 0; color: #9fb0c6; font-size: 15px; }
+  .status {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 22px;
+    padding: 7px 14px; border-radius: 999px;
+    border: 1px solid rgba(53, 211, 154, .35); background: rgba(53, 211, 154, .08);
+    color: #35d39a; font-size: 13px; letter-spacing: .3px;
+  }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: pulse 2.4s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+  footer { margin-top: 30px; font-size: 12px; color: #5f7188; }
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="mark">H</div>
+    <h1>This site is live</h1>
+    <p>Everything is up and running.</p>
+    <div class="status"><span class="dot"></span>ONLINE</div>
+    <footer>houmo.loc.cc</footer>
+  </main>
+</body>
+</html>
